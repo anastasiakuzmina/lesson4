@@ -1,4 +1,4 @@
-﻿
+﻿/*
 
  Console.Write("ВВеди число: ");
  int number = int.Parse(Console.ReadLine());
@@ -7,7 +7,7 @@
  int result_2 = Convert.ToInt32(Math.Pow(number, 2));
  Console.WriteLine($"Квадрат числа {number} = {result_2}");
 
-
+*/
 //**************************************************************************************
 
 /*
