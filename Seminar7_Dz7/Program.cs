@@ -81,26 +81,25 @@ int [,] Getarray(int m, int n)
     return array;
 }
 
-void Getresult(int [,] array, int m, int n)
+void Getresult(int [,] array)
 {
-    int result=0;
-    for (int i=0; i < n; i++)
+    double result=0;
+    for (int i=0; i < array.GetLength(1); i++)
     { result=0;
-     for (int j=0; j < m; j++)
+     for (int j=0; j < array.GetLength(0); j++)
     {
         result=array[j,i] + result;
     }
-    Console.Write($"{result} ");
+    Console.Write($"{Math.Round(result/array.GetLength(0),2)} ");
     } 
 }
 
 
-Console.WriteLine("");
 Console.Write("Укажите количество строк ");
 int m = int.Parse(Console.ReadLine()); 
 Console.Write("Укажите количество столбецов: ");
 int n = int.Parse(Console.ReadLine()); 
 var array = Getarray(m, n);
 Console.Write("Среднее арифмитическое столбцов: ");
-Getresult(array,m,n);
+Getresult(array);
 */
